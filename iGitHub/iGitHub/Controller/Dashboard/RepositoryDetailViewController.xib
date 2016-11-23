@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoryDetailViewController" customModule="iGitHub" customModuleProvider="target">
+            <connections>
+                <outlet property="detailView" destination="Jzy-2C-hyi" id="KoK-QL-8pM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5iD-iN-aa7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jzy-2C-hyi" customClass="RepositoryDetailView" customModule="iGitHub" customModuleProvider="target">
+                    <frame key="frameInset" width="600" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jzy-2C-hyi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7pH-Nc-Gbu"/>
+                <constraint firstItem="Jzy-2C-hyi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NoK-Xr-3aJ"/>
+                <constraint firstAttribute="trailing" secondItem="Jzy-2C-hyi" secondAttribute="trailing" id="cTd-WE-wPV"/>
+                <constraint firstAttribute="bottom" secondItem="Jzy-2C-hyi" secondAttribute="bottom" id="cjW-0o-MGd"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

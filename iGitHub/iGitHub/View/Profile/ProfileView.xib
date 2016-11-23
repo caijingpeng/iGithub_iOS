@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="iGitHub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vVv-ML-ZFq">
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-2X-p5O">
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="rrM-ZD-a0f">
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="rrM-ZD-a0f" secondAttribute="height" multiplier="1:1" id="hJF-K0-r2J"/>
+                                        <constraint firstAttribute="width" constant="130" id="sYQ-8v-sw3"/>
+                                        <constraint firstAttribute="height" constant="130" id="syw-k5-G24"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rC-6s-ZTE">
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="O5l-xk-ItN">
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhz-Nj-0un">
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVM-nk-W7c">
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="oXa-na-IYG">
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-AJ-uhm">
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Company" translatesAutoresizingMaskIntoConstraints="NO" id="XE2-jw-LnJ">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="10" id="2dB-ee-MJV"/>
+                                                                <constraint firstAttribute="width" constant="13" id="tEK-0L-Ywy"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpL-O1-JgJ">
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="wgg-Cf-Mt3">
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="8QP-A9-waa">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="10" id="hr5-hz-PIB"/>
+                                                                <constraint firstAttribute="width" constant="8" id="sO9-Pe-shz"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybe-gD-6T6">
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ghG-dm-KlO">
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="6VX-dI-dW5">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10" id="5c5-nC-QXY"/>
+                                                                <constraint firstAttribute="height" constant="8" id="DvR-sH-7Vj"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKx-dT-NFH">
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5gT-A9-aOU">
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clock" translatesAutoresizingMaskIntoConstraints="NO" id="Uot-SF-XR0">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="10" id="JS0-Fh-AoB"/>
+                                                                <constraint firstAttribute="height" constant="10" id="ufc-n8-ZF6"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkw-0g-gTI">
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="oXa-na-IYG" secondAttribute="trailing" id="0cV-sa-rnV"/>
+                                        <constraint firstItem="O5l-xk-ItN" firstAttribute="leading" secondItem="1rC-6s-ZTE" secondAttribute="leading" id="BY6-Cg-hbA"/>
+                                        <constraint firstItem="oXa-na-IYG" firstAttribute="leading" secondItem="1rC-6s-ZTE" secondAttribute="leading" id="IfC-xV-7L2"/>
+                                        <constraint firstItem="O5l-xk-ItN" firstAttribute="top" secondItem="1rC-6s-ZTE" secondAttribute="top" constant="1" id="SNr-wZ-Wzm"/>
+                                        <constraint firstAttribute="trailing" secondItem="O5l-xk-ItN" secondAttribute="trailing" id="TrQ-T0-nJI"/>
+                                        <constraint firstItem="oXa-na-IYG" firstAttribute="top" secondItem="O5l-xk-ItN" secondAttribute="bottom" constant="9" id="j8Y-1o-AMc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="rrM-ZD-a0f" firstAttribute="top" secondItem="pbz-2X-p5O" secondAttribute="top" id="VYP-cc-HGT"/>
+                                <constraint firstAttribute="bottom" secondItem="rrM-ZD-a0f" secondAttribute="bottom" id="eoT-dy-UHd"/>
+                                <constraint firstItem="rrM-ZD-a0f" firstAttribute="leading" secondItem="pbz-2X-p5O" secondAttribute="leading" id="vcI-p0-nBq"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-j5-Nhr">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-qW-TAb" customClass="StarInfoView" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="4Ab-mp-fnS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="pbz-2X-p5O" firstAttribute="top" secondItem="vVv-ML-ZFq" secondAttribute="top" id="7OO-Zf-LZg"/>
+                        <constraint firstItem="0hR-j5-Nhr" firstAttribute="leading" secondItem="vVv-ML-ZFq" secondAttribute="leading" id="Yi3-9O-cnl"/>
+                        <constraint firstAttribute="trailing" secondItem="0hR-j5-Nhr" secondAttribute="trailing" id="fzm-I4-Q9M"/>
+                        <constraint firstAttribute="trailing" secondItem="8Ar-qW-TAb" secondAttribute="trailing" id="hcT-P1-oat"/>
+                        <constraint firstAttribute="bottom" secondItem="8Ar-qW-TAb" secondAttribute="bottom" id="iiL-9j-u3X"/>
+                        <constraint firstItem="8Ar-qW-TAb" firstAttribute="leading" secondItem="vVv-ML-ZFq" secondAttribute="leading" id="krd-5o-Rzc"/>
+                        <constraint firstItem="pbz-2X-p5O" firstAttribute="leading" secondItem="vVv-ML-ZFq" secondAttribute="leading" id="oxW-Zt-L1v"/>
+                        <constraint firstAttribute="trailing" secondItem="pbz-2X-p5O" secondAttribute="trailing" id="u1t-h8-Znl"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rrM-ZD-a0f" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.35" id="Smw-Pf-cfW"/>
+                <constraint firstItem="vVv-ML-ZFq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="X7L-6U-gvw"/>
+                <constraint firstItem="rrM-ZD-a0f" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.35" id="cwk-G9-H5S"/>
+                <constraint firstAttribute="bottom" secondItem="vVv-ML-ZFq" secondAttribute="bottom" id="rJe-ya-heq"/>
+                <constraint firstAttribute="trailing" secondItem="vVv-ML-ZFq" secondAttribute="trailing" constant="15" id="t3R-PR-Fl8"/>
+                <constraint firstItem="vVv-ML-ZFq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="z5Z-2e-QmN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Smw-Pf-cfW"/>
+                    <exclude reference="cwk-G9-H5S"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bioLabel" destination="0hR-j5-Nhr" id="hwN-jY-Srb"/>
+                <outlet property="companyLabel" destination="dpL-O1-JgJ" id="Wgi-QW-Hfo"/>
+                <outlet property="emailLabel" destination="CKx-dT-NFH" id="FTd-7d-e8D"/>
+                <outlet property="headImageView" destination="rrM-ZD-a0f" id="UNs-OE-yDy"/>
+                <outlet property="infoView" destination="8Ar-qW-TAb" id="4pg-vc-RVl"/>
+                <outlet property="locationLabel" destination="Ybe-gD-6T6" id="kpP-D2-svU"/>
+                <outlet property="nameLabel" destination="Vhz-Nj-0un" id="BT1-HO-ZfD"/>
+                <outlet property="nickname" destination="YVM-nk-W7c" id="f2K-pc-sJX"/>
+                <outlet property="timeLabel" destination="dkw-0g-gTI" id="mfo-mn-UMP"/>
+            </connections>
+            <point key="canvasLocation" x="131.5" y="8.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Clock" width="9" height="10"/>
+        <image name="Company" width="12" height="10"/>
+        <image name="Email" width="10" height="7"/>
+        <image name="Location" width="8" height="10"/>
+        <image name="image_placeholder" width="58" height="58"/>
+    </resources>
+</document>

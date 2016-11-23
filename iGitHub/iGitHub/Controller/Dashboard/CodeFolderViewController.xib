@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CodeFolderViewController" customModule="iGitHub" customModuleProvider="target">
+            <connections>
+                <outlet property="folderView" destination="tlW-uQ-Rco" id="e9i-RO-cky"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ud0-sU-Bph"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlW-uQ-Rco" customClass="CodeFolderRefreshView" customModule="iGitHub" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tlW-uQ-Rco" secondAttribute="trailing" id="6UB-xt-CrD"/>
+                <constraint firstAttribute="bottom" secondItem="tlW-uQ-Rco" secondAttribute="bottom" id="95N-g0-j4b"/>
+                <constraint firstItem="tlW-uQ-Rco" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s3t-Pz-qQe"/>
+                <constraint firstItem="tlW-uQ-Rco" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wvV-CU-YI6"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="iGitHub" customModuleProvider="target">
+            <connections>
+                <outlet property="mainScrollView" destination="D76-yV-y9g" id="E0e-Kx-C5w"/>
+                <outlet property="navgationView" destination="Zhj-TS-dQy" id="Zgo-AN-x6K"/>
+                <outlet property="searchBar" destination="O8V-DD-4fa" id="RZA-x6-Kmy"/>
+                <outlet property="searchHistoryBottomConstraint" destination="wz7-fS-1zZ" id="UKf-VN-PAw"/>
+                <outlet property="searchHistoryView" destination="LXP-8a-fOH" id="wXz-im-HWM"/>
+                <outlet property="searchIssueView" destination="f3A-Tw-qMM" id="tXQ-Fk-gOz"/>
+                <outlet property="searchRepositoryView" destination="gd4-2E-DGS" id="NzQ-Ch-kkL"/>
+                <outlet property="searchUserView" destination="YTC-bX-61g" id="WE9-tp-5XE"/>
+                <outlet property="segmentCtrl" destination="2Bo-8m-8VZ" id="FWA-B7-9ui"/>
+                <outlet property="topView" destination="saH-qc-qfo" id="wXp-3p-eMX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="lw8-wu-0tN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhj-TS-dQy">
+                    <subviews>
+                        <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="O8V-DD-4fa">
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="4RA-fD-var"/>
+                            </connections>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.4823529412" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="O8V-DD-4fa" secondAttribute="trailing" id="HDE-ve-KgJ"/>
+                        <constraint firstItem="O8V-DD-4fa" firstAttribute="leading" secondItem="Zhj-TS-dQy" secondAttribute="leading" id="ITP-uj-cS4"/>
+                        <constraint firstAttribute="height" constant="64" id="nwM-j5-1n6"/>
+                        <constraint firstAttribute="bottom" secondItem="O8V-DD-4fa" secondAttribute="bottom" id="ua6-Pc-f3i"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saH-qc-qfo">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-8m-8VZ" customClass="AnimateSegmentControl" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="GDc-M5-z3w"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4Ur-HW-JPZ"/>
+                        <constraint firstItem="2Bo-8m-8VZ" firstAttribute="leading" secondItem="saH-qc-qfo" secondAttribute="leading" id="Dh6-KJ-Awg"/>
+                        <constraint firstAttribute="trailing" secondItem="2Bo-8m-8VZ" secondAttribute="trailing" id="Y4m-P1-FIv"/>
+                        <constraint firstItem="2Bo-8m-8VZ" firstAttribute="top" secondItem="saH-qc-qfo" secondAttribute="top" id="lMS-nv-G4K"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D76-yV-y9g">
+                    <frame key="frameInset" minY="144" width="375" height="523"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gd4-2E-DGS" customClass="RepositorySearchResultView" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3A-Tw-qMM" customClass="IssuesSearchResultView" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTC-bX-61g" customClass="UsersSearchResultView" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gd4-2E-DGS" firstAttribute="width" secondItem="D76-yV-y9g" secondAttribute="width" id="14B-Zp-ANX"/>
+                        <constraint firstItem="gd4-2E-DGS" firstAttribute="top" secondItem="D76-yV-y9g" secondAttribute="top" id="Cds-cl-hu0"/>
+                        <constraint firstItem="YTC-bX-61g" firstAttribute="width" secondItem="D76-yV-y9g" secondAttribute="width" id="FEQ-QP-Nf1"/>
+                        <constraint firstItem="f3A-Tw-qMM" firstAttribute="leading" secondItem="gd4-2E-DGS" secondAttribute="trailing" id="Iy6-hv-M2a"/>
+                        <constraint firstItem="YTC-bX-61g" firstAttribute="top" secondItem="D76-yV-y9g" secondAttribute="top" id="YgF-ws-fhc"/>
+                        <constraint firstItem="gd4-2E-DGS" firstAttribute="leading" secondItem="D76-yV-y9g" secondAttribute="leading" id="Z5B-A4-hwi"/>
+                        <constraint firstItem="YTC-bX-61g" firstAttribute="height" secondItem="D76-yV-y9g" secondAttribute="height" id="ZFg-QE-LDI"/>
+                        <constraint firstItem="f3A-Tw-qMM" firstAttribute="top" secondItem="D76-yV-y9g" secondAttribute="top" id="dd9-93-vv4"/>
+                        <constraint firstItem="YTC-bX-61g" firstAttribute="leading" secondItem="f3A-Tw-qMM" secondAttribute="trailing" id="k7J-XL-Wvc"/>
+                        <constraint firstAttribute="trailing" secondItem="YTC-bX-61g" secondAttribute="trailing" id="qKL-hm-qgN"/>
+                        <constraint firstItem="f3A-Tw-qMM" firstAttribute="width" secondItem="D76-yV-y9g" secondAttribute="width" id="rxP-5i-uCH"/>
+                        <constraint firstItem="gd4-2E-DGS" firstAttribute="height" secondItem="D76-yV-y9g" secondAttribute="height" id="t4O-wP-vvh"/>
+                        <constraint firstItem="f3A-Tw-qMM" firstAttribute="height" secondItem="D76-yV-y9g" secondAttribute="height" id="uJe-ni-1Ye"/>
+                    </constraints>
+                </scrollView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-8a-fOH">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZDh-Ed-dTC"/>
+                        <outlet property="delegate" destination="-1" id="zBR-su-hoh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zhj-TS-dQy" secondAttribute="trailing" id="7Kd-vO-LEG"/>
+                <constraint firstItem="LXP-8a-fOH" firstAttribute="top" secondItem="Zhj-TS-dQy" secondAttribute="bottom" id="9GG-Qq-Ezo"/>
+                <constraint firstAttribute="trailing" secondItem="D76-yV-y9g" secondAttribute="trailing" id="FOg-C3-2Sh"/>
+                <constraint firstItem="LXP-8a-fOH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QXg-JL-LDi"/>
+                <constraint firstAttribute="trailing" secondItem="LXP-8a-fOH" secondAttribute="trailing" id="R6g-N4-sKv"/>
+                <constraint firstItem="Zhj-TS-dQy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Sjv-Qe-GZT"/>
+                <constraint firstAttribute="bottom" secondItem="D76-yV-y9g" secondAttribute="bottom" constant="49" id="Wg4-sM-paV"/>
+                <constraint firstItem="Zhj-TS-dQy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="akn-HF-KXQ"/>
+                <constraint firstItem="D76-yV-y9g" firstAttribute="top" secondItem="saH-qc-qfo" secondAttribute="bottom" id="bKK-3W-nMW"/>
+                <constraint firstItem="saH-qc-qfo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hU5-L7-3nb"/>
+                <constraint firstItem="saH-qc-qfo" firstAttribute="top" secondItem="Zhj-TS-dQy" secondAttribute="bottom" id="mTq-kj-tm1"/>
+                <constraint firstAttribute="trailing" secondItem="saH-qc-qfo" secondAttribute="trailing" id="ma8-6q-Xye"/>
+                <constraint firstAttribute="bottom" secondItem="LXP-8a-fOH" secondAttribute="bottom" constant="216" id="wz7-fS-1zZ"/>
+                <constraint firstItem="D76-yV-y9g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xlb-ME-lge"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-67" y="-38"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Kingfisher (3.1.0)
+  - SnapKit (3.0.1)
+  - UIColor_Hex_Swift (3.0.1)
+  - XCGLogger (4.0.0):
+    - XCGLogger/Core (= 4.0.0)
+  - XCGLogger/Core (4.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Kingfisher (~> 3.1.0)
+  - SnapKit (~> 3.0.1)
+  - UIColor_Hex_Swift (~> 3.0.1)
+  - XCGLogger (~> 4.0.0)
+  - YYKit (~> 1.0.9)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Kingfisher: 7779f22e977393e9533a89a9685beb8f679d3767
+  SnapKit: f818b8326d45b4e1c777d0ab27b5c0a3624bfdeb
+  UIColor_Hex_Swift: e4ba71eed823ac27b14bb5394db990fbc73ff92c
+  XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: d7d7689a050f096db32e27205f7f0b82871df1bf
+
+COCOAPODS: 1.1.0.beta.2

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IssueListViewController" customModule="iGitHub" customModuleProvider="target">
+            <connections>
+                <outlet property="issueRefreshView" destination="yvA-q9-MwW" id="baV-IR-8am"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvA-q9-MwW" customClass="IssueListRefreshView" customModule="iGitHub" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yvA-q9-MwW" secondAttribute="bottom" id="Ak4-oH-WkP"/>
+                <constraint firstItem="yvA-q9-MwW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BCM-lr-FbF"/>
+                <constraint firstItem="yvA-q9-MwW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NaC-v1-H5C"/>
+                <constraint firstAttribute="trailing" secondItem="yvA-q9-MwW" secondAttribute="trailing" id="hb2-aR-tPi"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

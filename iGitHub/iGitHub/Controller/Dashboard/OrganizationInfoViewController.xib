@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrganizationInfoViewController" customModule="iGitHub" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="YYl-Lh-gOz" id="8Ps-CQ-cyN"/>
+                <outlet property="mainSV" destination="1xZ-Tk-i5e" id="ljC-XD-uTK"/>
+                <outlet property="membersView" destination="dUP-SP-Ofg" id="BlO-iV-IcU"/>
+                <outlet property="repositoryView" destination="bsu-QQ-orM" id="tYr-8T-Xow"/>
+                <outlet property="segmentCtrl" destination="BRE-x1-vuv" id="Dlf-7i-K2S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYl-Lh-gOz" customClass="OrganizationHeaderView" customModule="iGitHub" customModuleProvider="target">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="pYC-Xm-P2t"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRE-x1-vuv" customClass="AnimateSegmentControl" customModule="iGitHub" customModuleProvider="target">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6IV-7D-lOk"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xZ-Tk-i5e">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsu-QQ-orM" customClass="OrganizationRepositoryRefreshView" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUP-SP-Ofg" customClass="OrganizationMembersRefreshView" customModule="iGitHub" customModuleProvider="target">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dUP-SP-Ofg" secondAttribute="trailing" id="6Da-Fr-uLd"/>
+                        <constraint firstItem="bsu-QQ-orM" firstAttribute="width" secondItem="1xZ-Tk-i5e" secondAttribute="width" id="IHv-ac-4cJ"/>
+                        <constraint firstItem="bsu-QQ-orM" firstAttribute="top" secondItem="1xZ-Tk-i5e" secondAttribute="top" id="R4h-ag-AAW"/>
+                        <constraint firstItem="bsu-QQ-orM" firstAttribute="leading" secondItem="1xZ-Tk-i5e" secondAttribute="leading" id="dNC-UU-Vm5"/>
+                        <constraint firstItem="dUP-SP-Ofg" firstAttribute="leading" secondItem="bsu-QQ-orM" secondAttribute="trailing" id="djR-2D-Vbp"/>
+                        <constraint firstItem="bsu-QQ-orM" firstAttribute="height" secondItem="1xZ-Tk-i5e" secondAttribute="height" id="gpy-xb-zmx"/>
+                        <constraint firstAttribute="bottom" secondItem="bsu-QQ-orM" secondAttribute="bottom" id="nkW-xw-vb8"/>
+                        <constraint firstItem="dUP-SP-Ofg" firstAttribute="height" secondItem="1xZ-Tk-i5e" secondAttribute="height" id="p9a-Et-XG4"/>
+                        <constraint firstItem="dUP-SP-Ofg" firstAttribute="top" secondItem="1xZ-Tk-i5e" secondAttribute="top" id="tUR-jd-OBI"/>
+                        <constraint firstAttribute="bottom" secondItem="dUP-SP-Ofg" secondAttribute="bottom" id="xkN-i4-g7y"/>
+                        <constraint firstItem="dUP-SP-Ofg" firstAttribute="width" secondItem="1xZ-Tk-i5e" secondAttribute="width" id="zKw-Mr-vvw"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xkN-i4-g7y"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YYl-Lh-gOz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6gr-9M-1fR"/>
+                <constraint firstItem="BRE-x1-vuv" firstAttribute="top" secondItem="YYl-Lh-gOz" secondAttribute="bottom" id="8wn-Yz-Rhi"/>
+                <constraint firstItem="BRE-x1-vuv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JAw-94-E0k"/>
+                <constraint firstAttribute="bottom" secondItem="1xZ-Tk-i5e" secondAttribute="bottom" id="LON-r2-hX5"/>
+                <constraint firstAttribute="trailing" secondItem="YYl-Lh-gOz" secondAttribute="trailing" id="NVh-Cc-N51"/>
+                <constraint firstItem="1xZ-Tk-i5e" firstAttribute="top" secondItem="BRE-x1-vuv" secondAttribute="bottom" id="YEJ-u1-g3D"/>
+                <constraint firstItem="1xZ-Tk-i5e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YGl-mI-kId"/>
+                <constraint firstAttribute="trailing" secondItem="1xZ-Tk-i5e" secondAttribute="trailing" id="bts-Lu-tHF"/>
+                <constraint firstAttribute="trailing" secondItem="BRE-x1-vuv" secondAttribute="trailing" id="c4E-KO-8gh"/>
+                <constraint firstItem="YYl-Lh-gOz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u3X-yZ-yut"/>
+            </constraints>
+            <point key="canvasLocation" x="213.5" y="196.5"/>
+        </view>
+    </objects>
+</document>
