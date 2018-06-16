@@ -10,3 +10,5 @@ target 'iGitHub' do
     pod 'YYKit', '~> 1.0.9'
     pod 'XCGLogger', '~> 4.0.0'
 end
+
+# v3.9 edit user info
